@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E9778C9120AA1F90002713A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9778C9020AA1F90002713A6 /* AppDelegate.swift */; };
-		E9778C9320AA1F90002713A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9778C9220AA1F90002713A6 /* ViewController.swift */; };
 		E9778C9620AA1F90002713A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9778C9420AA1F90002713A6 /* Main.storyboard */; };
 		E9778C9920AA1F91002713A6 /* Home_Owner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9778C9720AA1F91002713A6 /* Home_Owner.xcdatamodeld */; };
 		E9778C9B20AA1F92002713A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9778C9A20AA1F92002713A6 /* Assets.xcassets */; };
 		E9778C9E20AA1F92002713A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9778C9C20AA1F92002713A6 /* LaunchScreen.storyboard */; };
 		E9778CA920AA1F92002713A6 /* Home_OwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9778CA820AA1F92002713A6 /* Home_OwnerTests.swift */; };
 		E9778CB420AA1F93002713A6 /* Home_OwnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9778CB320AA1F93002713A6 /* Home_OwnerUITests.swift */; };
+		E9778CC220AA30EB002713A6 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9778CC120AA30EB002713A6 /* ItemsViewController.swift */; };
+		E9778CC420AA3386002713A6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9778CC320AA3386002713A6 /* Item.swift */; };
+		E9778CC620AA387D002713A6 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9778CC520AA387D002713A6 /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		E9778C8D20AA1F90002713A6 /* Home Owner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home Owner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9778C9020AA1F90002713A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9778C9220AA1F90002713A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E9778C9520AA1F90002713A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9778C9820AA1F91002713A6 /* Home_Owner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Home_Owner.xcdatamodel; sourceTree = "<group>"; };
 		E9778C9A20AA1F92002713A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		E9778CAF20AA1F93002713A6 /* Home OwnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Home OwnerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9778CB320AA1F93002713A6 /* Home_OwnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_OwnerUITests.swift; sourceTree = "<group>"; };
 		E9778CB520AA1F93002713A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9778CC120AA30EB002713A6 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		E9778CC320AA3386002713A6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E9778CC520AA387D002713A6 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,9 @@
 		E9778C8420AA1F90002713A6 = {
 			isa = PBXGroup;
 			children = (
+				E9778CC320AA3386002713A6 /* Item.swift */,
+				E9778CC120AA30EB002713A6 /* ItemsViewController.swift */,
+				E9778CC520AA387D002713A6 /* ItemStore.swift */,
 				E9778C8F20AA1F90002713A6 /* Home Owner */,
 				E9778CA720AA1F92002713A6 /* Home OwnerTests */,
 				E9778CB220AA1F93002713A6 /* Home OwnerUITests */,
@@ -100,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				E9778C9020AA1F90002713A6 /* AppDelegate.swift */,
-				E9778C9220AA1F90002713A6 /* ViewController.swift */,
 				E9778C9420AA1F90002713A6 /* Main.storyboard */,
 				E9778C9A20AA1F92002713A6 /* Assets.xcassets */,
 				E9778C9C20AA1F92002713A6 /* LaunchScreen.storyboard */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9778CC420AA3386002713A6 /* Item.swift in Sources */,
 				E9778C9920AA1F91002713A6 /* Home_Owner.xcdatamodeld in Sources */,
-				E9778C9320AA1F90002713A6 /* ViewController.swift in Sources */,
+				E9778CC220AA30EB002713A6 /* ItemsViewController.swift in Sources */,
+				E9778CC620AA387D002713A6 /* ItemStore.swift in Sources */,
 				E9778C9120AA1F90002713A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
